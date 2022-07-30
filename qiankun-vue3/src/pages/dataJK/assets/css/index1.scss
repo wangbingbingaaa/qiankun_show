@@ -1,0 +1,38 @@
+@import url(./variables.scss);
+$bg:transparent;
+$bg2:#366ca2;
+$color:#edf4f4;
+$br:#dcdfe6;
+body {
+    color: $color
+}
+.el-tabs--border-card {
+    background: $bg;
+    border: 1px solid $bg;
+}
+.el-tabs--border-card>.el-tabs__header {
+    background-color: $bg
+}
+.el-tabs--border-card>.el-tabs__header .el-tabs__item.is-active {
+   
+    background-color: $bg2;
+    border-top:1px solid $br !important;
+    color: $color;
+    border-radius: 30px;
+    
+}
+.el-tabs__item {
+    margin: 1px 12px;
+
+}
+.el-table {
+    background: $bg;
+
+}
+.el-table th.el-table__cell {
+    background-color: $bg;
+}
+.el-table tr {
+    background-color: $bg2;
+    color: $color
+}
