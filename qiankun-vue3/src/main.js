@@ -10,11 +10,6 @@ import store from "./pages/dataJK/store";
 import ElmentPlus from 'element-plus';
 import 'element-plus/dist/index.css'
 import actions from '../src/actions'
-// import './assets/css/variabels'
-// import './assets/css/index1.scss'
-
-// createApp(App).use(router).use(store).use(ElmentPlus).mount('#appJK')
-
 
 
 let instance = null;
@@ -23,7 +18,7 @@ function render (props = {}) {
     actions.setActions(props)
     instance = createApp(App);
     instance.use(router).use(ElmentPlus).use(store);
-    instance.mount(container ? container.querySelector("#app") : "#app");
+    instance.mount(container ? container.querySelector("#vue3") : "#vue3");
 }
 
 if (!window.__POWERED_BY_QIANKUN__) {

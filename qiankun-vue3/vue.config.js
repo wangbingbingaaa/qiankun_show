@@ -11,7 +11,7 @@ module.exports = {
     },
     configureWebpack: {
         output: {
-            library: 'vue3App111',
+            library: 'data-monitor',
             libraryTarget: 'umd',
         }
     },
@@ -25,5 +25,6 @@ module.exports = {
             'Access-Control-Allow-Origin': '*' // 允许跨域
         },
 
-    }
+    },
+    publicPath: 'http://localhost:10002/',
 };

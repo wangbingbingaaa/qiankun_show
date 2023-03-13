@@ -17,8 +17,13 @@ const apps = [
         activeRule: '/vue' // 通过哪一个路由来激活
     },
     {
+        name: 'data-monitor', // 应用的名字
+        entry: 'http://localhost:10002/', // 默认加载这个html，解析里面的js动态的执行（子应用必须支持跨域，内部使用的是 fetch）
+        container: '#vue3', // 要渲染到的容器名id
+        activeRule: '/vue3' // 通过哪一个路由来激活
+    },
+    {
         name: 'reactApp',
-        // entry: 'http://localhost:9000/#/login/',
         entry: 'http://localhost:20000/',
         container: '#react',
         activeRule: '/react'
